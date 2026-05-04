@@ -1,0 +1,294 @@
+﻿Can navigate the terminal: ls, cd, whoami, pwd.
+ls = list files
+cd = go into folder
+pwd = current directory
+whoami = current user
+I can do it.
+Can create, delete files / folders: mkdir, rm, cp, mv, touch, nano.
+mkdir = make a new directory
+rm = remove files or directories
+cp = copy files or directories
+mv = moves files
+touch = creates new empty file
+nano = opens a file in a text editor
+I can do it
+Can use the following basic terminal commands: cat, wc, uniq, sort.
+cat = display contents of a file
+wc = counts lines and characters in a file
+uniq = removes duplicated lines
+sort = sort lines in a file alphabetically or numerically
+I can do it
+
+
+
+
+
+
+
+
+
+
+Can create a new repository in your prefered Git provider.
+Step 1: Click new repository
+Step 2: Choose settings and name
+Step 3: click create
+I can do it.
+Can perform basic Git operations: clone, add, commit, push, pull.
+git clone = clones a repository to a local machine
+git add = moves a file to the staging area and marking it for the next commit
+git commit = Saves changes with a message
+git push = uploads local changes to the remote repository
+Git pull = fetches and merges changes from a remote repository
+I can do it:
+Can list the main hardware components of a computer, their functions and the Von Neumann architecture.
+CPU
+RAM
+ STORAGE
+Von Neumann architecture:
+Program + data stored in the same memory
+CPU fetches then decodes and executes instructions
+
+
+Can explain how computers work, starting from hardware all the way to software.
+Hardware in a computer executes machine code binary.
+The Operating System (OS) manages the hardware and allows the programs to run.
+The software are coded so they can comply into the machine code
+I can do it
+Can talk about processes in operating systems.
+It has its own memory space while it can run at the same time with others and its managed by the OS.
+Can talk about different number representations such as:
+* Binary
+Its a base 2 and its used internally by computers
+
+* Hexadecimal
+Its a base 16 and its a compact representation of binary
+
+* Decimal
+Its a base 10 and its used for to represent data so humans can read it
+
+I can do it
+Can bring up real-world use cases for different number representations.
+Binary =  machine level operations
+Hexadecimal = addresses and colors
+Decimals = everyday calculations
+I can do it
+Can explain different charsets like ASCII and Unicode and how they differ.
+ASCII = foundational character encoding 128 characters. It allows computers to store text in 7 bit integers.
+
+
+I can do it
+Knows about different types of databases and their use cases.
+SQL = relational database. Stores data and organizes in tables of rows and columns.
+NoSQL =  non-relational database. Stores data in systems unstructured and where the data changes frequently.
+
+
+
+
+Can setup a new MySQL database and connect to it.
+CREATE DATABASE mydb;
+I can do it
+
+
+Can create DDL statements to create tables.
+CREATE TABLE users (
+id INT PRIMARY KEY,
+name VARCHAR(100)
+); 
+I can do it
+Can create DML (SELECT, INSERT) statements.
+INSERT INTO users (id, name) VALUES (1, 'Mario');
+SELECT * FROM users; 
+I can do it
+Can use WHERE clause to filter results.
+SELECT * FROM users WHERE name = 'Mario';
+
+
+Can define Primary Keys.
+Cannot be null
+Unique identifier for each row
+
+
+Understands how Foreign Keys work.
+Reference another table’s primary key
+Used to link tables
+
+
+
+
+In SELECT statements, can use (with moderate help):
+* LIMIT, ORDER BY, GROUP BY
+
+
+SELECT name FROM users
+ORDER BY name
+LIMIT 5;
+
+* aggregate functions like COUNT, SUM, AVG, MIN, and MAX
+
+
+SELECT COUNT(*), AVG(id) FROM users;
+
+* pattern matching with LIKE and wildcards
+
+
+SELECT * FROM users WHERE name LIKE 'D%';
+
+
+
+* JOIN to combine data from multiple tables
+
+SELECT users.name, orders.id
+FROM users
+JOIN orders ON users.id = orders.user_id;
+
+
+
+
+
+
+
+
+
+
+
+
+Can create inner, left and right joins after looking up the syntax.
+Inner join:
+SELECT * FROM a INNER JOIN b ON a.id = b.id;
+
+
+Left join:
+SELECT * FROM a LEFT JOIN b ON a.id = b.id;
+
+
+Right join:
+SELECT * FROM a RIGHT JOIN b ON a.id = b.id;
+
+
+
+
+Can create DDL statements to create tables with constraints: PRIMARY KEY, AUTO_INCREMENT, FOREIGN KEY, UNIQUE, NOT NULL.
+
+
+CREATE TABLE users (
+  id INT PRIMARY KEY AUTO_INCREMENT,
+  email VARCHAR(100) UNIQUE NOT NULL
+);
+
+
+I can do it
+
+
+Can create DML (UPDATE, DELETE) statements.
+
+
+UPDATE users SET name = 'Mario' WHERE id = 1;
+DELETE FROM users WHERE id = 1;
+
+
+Can create a pull request.
+Step 1: push branch
+Step 2: click compare& pull request
+
+
+I can do it
+Understands different Git workflows such as GitHub Flow.
+Create branch
+Work → commit
+Open pull request
+Review → merge
+
+
+
+
+Can solve a merge conflict.
+
+
+git add .
+git commit
+I can do it
+
+
+Can write YAML.
+
+
+name: John Doe
+age: 25
+student: true
+
+
+
+
+
+
+
+
+Understands what GitHub Actions are and can breakdown workflows into runners, jobs, and steps.
+
+
+Runner is machine executing workflow
+A job is a group of steps
+A step is an individual task
+
+
+Can give use cases for GitHub Actions.
+CI/CD pipelines
+Testing code automatically
+Deployment
+I can do it
+
+
+
+
+Understands different cloud service models: IaaS, PaaS, SaaS.
+IaaS = infrastructure (VMs)
+PaaS = platform (deploy apps)
+SaaS = ready-to-use software
+
+
+Can deploy a web application to Azure App Service.
+
+
+Microsoft Azure:
+
+Create App Service
+Connect repo
+Deploy
+
+
+
+
+Understands the flow from pushing, GitHub Actions running, building the project and deployment to Azure.
+   1. Code push
+   2. GitHub Actions runs 
+   3. It builds 
+   4. Deploys to Azure 
+
+
+Adding a database to a Spring Project.
+   1. Add dependency
+   2. Configure datasource
+   3. Connect via JDBC
+
+
+Setting up a database in Azure.
+   1. Create Azure SQL / MySQL
+   2. Configure access
+   3. Connect via connection string
+
+
+Can set up a database in Azure and connect it to an Azure App Service project with a guide.
+I can do it
+
+
+Is able to go through scenarios that can cause concurrency problems in databases.
+Issues that occur when multiple transactions access the same data at the same time.
+Can explain what ACID is and why it solves concurrency problems for databases.
+ACID is a set of properties (Atomicity, Consistency, Isolation, Durability) that ensure reliable and safe database transactions.
+
+
+
+
+Is aware of the possibility to define transactions in SQL, JDBC and atomic structures.
+Transactions in SQL and JDBC is a way to group multiple database operations so they either all succeed or all fail together. 
+Atomic structures are operations or components that are executed completely or not at all without interruption and its important for thread safety.
